@@ -1,0 +1,27 @@
+{
+    "type": "object",
+    "required": [
+        "ID",
+        "Title",
+        "DueDate",
+        "Completed"
+    ],
+    "properties": {
+        "ID": {
+            "$id": "#/properties/ID",
+            "type": "integer"
+        },
+        "Title": {
+            "$id": "#/properties/Title",
+            "type": "string"
+        },
+        "DueDate": {
+            "$id": "#/properties/DueDate",
+            "type": "string"
+        },
+        "Completed": {
+            "$id": "#/properties/Completed",
+            "type": "boolean"
+        }
+    }
+}

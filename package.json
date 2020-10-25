@@ -1,0 +1,26 @@
+{
+  "name": "api-automation-testing2020",
+  "version": "1.0.0",
+  "description": "API automation testing using mochai and supertest",
+  "main": "index.js",
+  "scripts": {
+    "test-fakerestapi": "./node_modules/mocha/bin/mocha ./fakerestapi/test --recursive --reporter mochawesome --reporter-options reportDir=reports/fakerestapi/mochawesome/ --timeout 10000",
+    "reports-fakerestapi": "open 'reports/fakerestapi/mochawesome/mochawesome.html'",
+    "append-reports": "node helpers/append_reports.js"
+  },
+  "keywords": [
+    "automation",
+    "testing"
+  ],
+  "author": "damarmustikoaji",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-json-schema": "^1.5.1",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.1.3",
+    "mochawesome": "^6.1.1",
+    "mysql": "^2.18.1",
+    "supertest": "^5.0.0"
+  }
+}

@@ -1,0 +1,70 @@
+{
+    "successOk": {
+        "codeNumber": 200,
+        "codeMessage": "OK"
+    },
+    "successCreated": {
+        "codeNumber": 201,
+        "codeMessage": "Created"
+    },
+    "successAccepted": {
+        "codeNumber": 202,
+        "codeMessage": "Accepted"
+    },
+    "successNoContent": {
+        "codeNumber": 204,
+        "codeMessage": "No Content"
+    },
+    "redirectionNotModified": {
+        "codeNumber": 304,
+        "codeMessage": "Not Modified"
+    },
+    "errorBadRequest": {
+        "codeNumber": 400,
+        "codeMessage": "Bad Request"
+    },
+    "errorUnauthorized": {
+        "codeNumber": 401,
+        "codeMessage": "Unauthorized"
+    },
+    "errorForbidden": {
+        "codeNumber": 403,
+        "codeMessage": "Forbidden"
+    },
+    "errorNotFound": {
+        "codeNumber": 404,
+        "codeMessage": "Not Found"
+    },
+    "errorRequestTimeout": {
+        "codeNumber": 408,
+        "codeMessage": "Request Timeout"
+    },
+    "errorConflict": {
+        "codeNumber": 409,
+        "codeMessage": "Conflict"
+    },
+    "errorUnprocessableEntity": {
+        "codeNumber": 422,
+        "codeMessage": "Unprocessable Entity"
+    },
+    "internalServerError": {
+        "codeNumber": 500,
+        "codeMessage": "Internal Server Error"
+    },
+    "notImplemented": {
+        "codeNumber": 501,
+        "codeMessage": "Not Implemented"
+    },
+    "badGateway": {
+        "codeNumber": 502,
+        "codeMessage": "Bad Gateway"
+    },
+    "serviceUnavailable": {
+        "codeNumber": 503,
+        "codeMessage": "Service Unavailable"
+    },
+    "gatewayTimeout": {
+        "codeNumber": 504,
+        "codeMessage": "Gateway Timeout"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "array",
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "required": [
+                    "ID",
+                    "Title",
+                    "DueDate",
+                    "Completed"
+                ],
+                "properties": {
+                    "ID": {
+                        "$id": "#/items/anyOf/0/properties/ID",
+                        "type": "integer"
+                    },
+                    "Title": {
+                        "$id": "#/items/anyOf/0/properties/Title",
+                        "type": "string"
+                    },
+                    "DueDate": {
+                        "$id": "#/items/anyOf/0/properties/DueDate",
+                        "type": "string"
+                    },
+                    "Completed": {
+                        "$id": "#/items/anyOf/0/properties/Completed",
+                        "type": "boolean"
+                    }
+                }
+            }
+        ]
+    }
+}
