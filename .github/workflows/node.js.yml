@@ -29,3 +29,4 @@ jobs:
     - run: npm run test-fakerestapi
     - run: npm run append-reports fakerestapi
     - run: echo 'For reports, you can go to https://jametsky.000webhostapp.com/'
+    - run: echo 'For graph reports, you can go to https://jametsky.000webhostapp.com/chart'
