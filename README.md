@@ -93,5 +93,7 @@ You can go to github `Actions`.
 ## Reporter
 
 You can go to https://jametsky.000webhostapp.com/
+<img src="helpers/reports.png" width="800"/>
 
 Or go to https://jametsky.000webhostapp.com/chart/
+<img src="helpers/graph.png" width="800"/>
