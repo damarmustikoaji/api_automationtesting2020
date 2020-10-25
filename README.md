@@ -28,7 +28,7 @@ $ npm install or yarn install
 $ cp .env.sample .env
 ```
 
-### This is directory structure within `mochaiwithsupertest`
+### This is directory structure
 
     .
     ├── [SERVICE]
