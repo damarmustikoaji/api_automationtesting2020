@@ -22,7 +22,7 @@ const testCase = {
 	}
 };
 
-describe(`${testCase.describe}`, () => {
+describe.skip(`${testCase.describe}`, () => {
 	before(`${testCase.before}`, async() => {
 		//test
 	});

@@ -27,4 +27,5 @@ jobs:
     - run: yarn install
     - run: cp .env.sample .env
     - run: npm run test-fakerestapi
+    - run: npm run append-reports fakerestapi
     - run: echo 'For reports, you can go to https://jametsky.000webhostapp.com/'

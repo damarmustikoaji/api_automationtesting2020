@@ -1,15 +1,8 @@
-let project;
-for (let j = 0; j < process.argv.length; j++) {
-    if(j = 2){
-      project = process.argv[j];
-      const data = require(`../reports/${project}/mochawesome/mochawesome.json`);
-      appendReports(data);
-      break;
-    }
-}
+const supertest = require('supertest');
+require('dotenv').config();
+const api = supertest(process.env.JAMET_URL);
 
-    function appendReports(data) {
-      const { execQueryReport } = require('./seed/execute_sql');
+ function appendReports(data) {
       const stats = data.stats;
       startDate = stats.start.split('T');
       timeStart = startDate[1].split('.');
@@ -17,8 +10,44 @@ for (let j = 0; j < process.argv.length; j++) {
       timeEnd = endDate[1].split('.');
 
       startDate = startDate[0] + ' ' + timeStart[0];
-      endDate = endDate[0] + ' ' + timeEnd[0];
+	  endDate = endDate[0] + ' ' + timeEnd[0];
+	  const payload = {
+        "name": project,
+        "suites": stats.suites,
+        "tests": stats.tests,
+        "passes": stats.passes,
+        "pending": stats.pending,
+        "failures": stats.failures,
+        "start": startDate,
+        "end": endDate,
+        "duration": stats.duration,
+        "tests_registered": stats.testsRegistered,
+        "pass_percent": stats.passPercent,
+        "pending_percent": stats.pendingPercent,
+        "other": stats.other,
+        "has_other": stats.hasOther,
+        "skipped": stats.skipped,
+        "has_skipped": stats.hasSkipped,
+        "created_at": endDate
+}
 
-      const sql = `INSERT INTO mochawesome (name, suites, tests, passes, pending, failures, start, end, duration, testsRegistered, passPercent, pendingPercent, other, hasOther, skipped, hasSkipped, created_at) VALUES ("${project}", ${stats.suites}, ${stats.tests}, ${stats.passes}, ${stats.pending}, ${stats.failures}, "${startDate}", "${endDate}", ${stats.duration}, ${stats.testsRegistered}, ${stats.pendingPercent}, ${stats.pendingPercent}, ${stats.other}, "${stats.hasOther}", ${stats.skipped}, "${stats.hasSkipped}", "${startDate}");`;
-      execQueryReport(sql);
+	const postAppendReport = () =>
+	api
+		.post('/api/insert.php')
+		.set('Content-Type', 'application/json')
+		.send(payload);
+
+	postAppendReport().then(response => {
+	console.log(response.body.message);
+	});
+	}
+
+let project;
+for (let j = 0; j < process.argv.length; j++) {
+    if(j = 2){
+      project = process.argv[j];
+	  const data = require(`../reports/${project}/mochawesome/mochawesome.json`);
+	  appendReports(data);
+      break;
     }
+}
