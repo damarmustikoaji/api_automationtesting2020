@@ -23,7 +23,7 @@
 ### How to Getting Started
 
 ```sh
-$ cd mochaiwithsupertest
+$ cd [project]
 $ npm install or yarn install
 $ cp .env.sample .env
 ```
