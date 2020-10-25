@@ -86,6 +86,6 @@ $ npm run test-[SERVICE] -- --grep @skip --invert       | to exclude @skip tag
 $ npm run reports-[SERVICE]                             | to open the mochawesome report
 ```
 
-## Integration est on CI
+## Integration test on CI
 
 You can go to github `Actions`.
