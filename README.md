@@ -89,6 +89,7 @@ $ npm run reports-[SERVICE]                             | to open the mochawesom
 ## Integration test on CI
 
 You can go to github `Actions`.
+<img src="helpers/gitci.png" width="800"/>
 
 ## Reporter
 
