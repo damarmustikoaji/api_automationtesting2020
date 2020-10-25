@@ -95,5 +95,8 @@ You can go to github `Actions`.
 You can go to https://jametsky.000webhostapp.com/
 <img src="helpers/reports.png" width="800"/>
 
-Or go to https://jametsky.000webhostapp.com/chart/
+go to https://jametsky.000webhostapp.com/api/read.php
+<img src="helpers/read.png" width="800"/>
+
+go to https://jametsky.000webhostapp.com/chart/
 <img src="helpers/graph.png" width="800"/>
