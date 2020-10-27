@@ -93,11 +93,11 @@ You can go to github `Actions`.
 
 ## Reporter
 
-You can go to https://jametsky.000webhostapp.com/
+For HTML report, You can go to https://jametsky.000webhostapp.com/
 <img src="helpers/reports.png" width="800"/>
 
-go to https://jametsky.000webhostapp.com/api/read.php
+For JSON update, go to https://jametsky.000webhostapp.com/api/read.php
 <img src="helpers/read.png" width="800"/>
 
-go to https://jametsky.000webhostapp.com/chart/
+For Graph, go to https://jametsky.000webhostapp.com/chart/
 <img src="helpers/graph.png" width="800"/>
